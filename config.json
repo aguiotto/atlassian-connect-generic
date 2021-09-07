@@ -1,0 +1,21 @@
+{
+  "development": {
+    "port": 3000,
+    "errorTemplate": true
+  },
+  "production": {
+    "port": "$PORT",
+    "errorTemplate": true,
+    "localBaseUrl": "https://your-subdomain.herokuapp.com",
+    "store": {
+      "type": "postgres",
+      "url": "$DATABASE_URL"
+    },
+    "whitelist": [
+      "*.jira-dev.com",
+      "*.atlassian.net",
+      "*.atlassian.com",
+      "*.jira.com"
+    ]
+  }
+}
